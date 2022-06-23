@@ -61,7 +61,7 @@ Create an account at https://finnhub.io/ to get a free API key to get access to 
 ### Create database file
 
 Create the file ```public/javascripts/functions/secret.js``` and fill in the credentials to your database.  
-You can create a basic structure of the database with the file in ./db/db_structure_##.sql
+You can create a basic structure of the database with the file in ```/db/db_structure_##.sql```
 
 Example dbconn.js
 ```
