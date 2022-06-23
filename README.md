@@ -36,24 +36,28 @@ pacman -S nodejs
 ```
 git clone https://github.com/MarcelKaemper/HackergameV2.git
 ```
+# Get an API key from finnhub.io
+Create an account at https://finnhub.io/ to get a free API key to get access to live stock information.  
 
 ### Create database file
 
-Create the file ```public/javascripts/database/dbconn.js``` and fill in the credentials to your database.  
+Create the file ```public/javascripts/functions/secret.js``` and fill in the credentials to your database.  
 You can download the structure of our database [here](https://marcelkaemper.dev/db_structure_09_20.sql) (If outdated -> Open an issue)  
 
 Example dbconn.js
 ```
-var mysql = require('mysql');
+module.exports = {
+    _DB: {
+        _HOST: "",
+        _USER: "",
+        _PASSWORD: "",
+        _DATABASE: "",
+    },
+    _API: {
+        _KEY: "" # https://finnhub.io/ API_KEY
+    }
+}
 
-var pool = mysql.createPool({
-	host: "",
-	user: "",
-	password: "",
-	database: ""
-});
-
-module.exports = pool;
 ```
 
 ### Run the server:  
