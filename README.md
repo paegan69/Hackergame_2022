@@ -1,6 +1,6 @@
 # HackergameV2
 Browsergame made with Node.js and MySQL  
-Play an early demo version here: [hackergameV2](https://game.marcelkaemper.de)  
+Play an early demo version here: [hackergameV2](https://game.marcelkaemper.de)  (*server down)
 Take a look at the [Wiki](https://github.com/MarcelKaemper/HackergameV2/wiki/tutorial) to get started.  
 
 ## Features
@@ -42,7 +42,7 @@ Create an account at https://finnhub.io/ to get a free API key to get access to 
 ### Create database file
 
 Create the file ```public/javascripts/functions/secret.js``` and fill in the credentials to your database.  
-You can download the structure of our database [here](https://marcelkaemper.dev/db_structure_09_20.sql) (If outdated -> Open an issue)  
+You can create a basic structure of the database with the file in ./db/db_structure_##.sql
 
 Example dbconn.js
 ```
