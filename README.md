@@ -36,7 +36,7 @@ pacman -S nodejs
 ```
 git clone https://github.com/MarcelKaemper/HackergameV2.git
 ```
-# Get an API key from finnhub.io
+### Get an API key from finnhub.io
 Create an account at https://finnhub.io/ to get a free API key to get access to live stock information.  
 
 ### Create database file
