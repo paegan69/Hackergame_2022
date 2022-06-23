@@ -68,3 +68,6 @@ node bin/www
 OR
 pm2 start bin/www
 ```
+### Run the server:  
+
+Access the game at http://[server-ip]:3000
