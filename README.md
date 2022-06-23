@@ -20,11 +20,30 @@ Take a look at the [Wiki](https://github.com/MarcelKaemper/HackergameV2/wiki/tut
 ### Installing NodeJS
 
 #### Debian based distributions:
-
+Start by running apt updates and downloading and updated NodeJS installer (offial distro repositories usually outdated): 
 ```
 apt update
-apt install nodejs
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 ```
+This will install the nvm script to your user account. To use it, you must first source your .bashrc file:
+```
+source ~/.bash_profile
+```
+Now, check which versions of NodeJS are available:
+```
+nvm list-remote
+```
+I recommend using one of the LTS: Fermium releases since this is what this fork was tested on:
+```
+nvm install v14.17.4
+OR
+nvm install lts/fermium
+```
+Verify that you’ve installed the new version by running node with the -v version flag:
+```
+node -v
+```
+
 #### Arch based distributions:
 
 ```
